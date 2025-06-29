@@ -1,48 +1,177 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estudio de Arquitectura</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800">
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-  <div class="max-w-3xl mx-auto p-8">
-    <!-- Encabezado -->
-    <header class="text-center mb-10">
-      <h1 class="text-4xl font-bold text-gray-900 mb-2">Estudio de Arquitectura</h1>
-      <p class="text-lg text-gray-600">Diseñamos espacios funcionales, modernos y personalizados para cada cliente.</p>
-    </header>
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <!-- Descripción -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-2">¿Quiénes somos?</h2>
-      <p class="text-gray-700">
-        Somos un equipo de arquitectos apasionados por transformar ideas en espacios habitables y únicos.
-        Brindamos servicios de diseño arquitectónico, remodelación, planificación urbana y asesoría técnica, con enfoque en sostenibilidad, funcionalidad y estética.
-      </p>
-    </section>
-
-    <!-- Contacto -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-2">Contáctanos</h2>
-      <ul class="text-gray-700">
-        <li><strong>Teléfono:</strong> +593 999 999 999</li>
-        <li><strong>Email:</strong> contacto@arquitecturaestudio.com</li>
-        <li><strong>Dirección:</strong> Av. Principal 123, Quito, Ecuador</li>
-      </ul>
-    </section>
-
-    <!-- Cotización / WhatsApp -->
-    <section class="text-center mt-10">
-      <a href="https://wa.me/593999999999?text=Hola%2C+quisiera+una+cotizaci%C3%B3n+para+un+proyecto+de+arquitectura"
-         class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition">
-        Solicitar Cotización por WhatsApp
-      </a>
-    </section>
-  </div>
-
-</body>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fcf8f8] group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7e7] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#1b0e0e]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#1b0e0e] text-lg font-bold leading-tight tracking-[-0.015em]">Studio Red</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#1b0e0e] text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-[#1b0e0e] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#1b0e0e] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f3e7e7] text-[#1b0e0e] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Login</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHIlg8CCjvhejrdDFvtfqG4eHH_2fxJItoQp7zAq0v0fRHZYUUnG4VW1R0Krt4FNkfHxR30dfaptOLCCO8mB94W1QKwcBY3uaLwUKCg1qA_8BO_E8ebaqqv5m1KfOiNFAZtYjOogWoZmIadpLhut4YSzVojeHpSMMfYfLFFkHjDw3j9LmHpaDkMNahzyhFqvqnAhBwiQZ3rEJXLT-4yHwgHm-s_YvOAzYka73yRM6pMHI226GWcGhp5vJt45peGF7TemOP_g9ecMVs");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Crafting Spaces That Inspire
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      We are an architecture studio dedicated to creating innovative and sustainable designs that enhance the human experience. Our work is driven by a passion for
+                      creativity, functionality, and environmental responsibility.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e92929] text-[#fcf8f8] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">View Our Projects</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTFF2wC0Ktz37Inw5mIkWQG_4quZg5zxsygbjfFn7hM-VWAKUr5wSyfNvB06KhC4Oh9mHx4pnljbLscsNLOHe2aisAmQxrMrv5yfD7pD_hldYJql8TZHoEJnX9DTakpkLr5nJs9U4uckRTplcsR3q_6zInBIwUGFBLhkkgqpK97OEkKsO3RnL_Ky-Oub0WFKGd_GxbYtGeZSn5oIpLQVIHJyA4EndxJo-C3cOKWe13ydHoF3r5OfsmBXLeip_faUhIzEpvP0MTy6iL");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1b0e0e] text-base font-medium leading-normal">Residential Haven</p>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">A contemporary home designed for comfort and style.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaCmraYLEa9blKWdyT9WW7jvtC3cEcrKo8M452xl2MJX0qFhsxQOmrPg0Cd5zWNGGAwSP0R_uQSXwBlso7Ar8vpRjbjME7j4tdN9meTEMRlTCxhMPvWyZqpoXLbH0glX0Q99TAYgf-MeryaE96qFkIWR5VwG2A5SGQBDTTm5pfwxETd4z6H1i8PhTqIdxf-dZxp9QWnMM_4kAKK-ibCk3pF3ZWtlFw3nU5bRhzoNxuNrunYp2Ryibis8i8kM-9WXJUsX3QjI_lZttA");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1b0e0e] text-base font-medium leading-normal">Commercial Innovation</p>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">A cutting-edge office space fostering collaboration.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFTGaSEglenfWl4GcWXLcyBI75_fnsunWUMUV86WykhUFXJuxP53mUkQcSV8tz6oJH_g2hWp8v64d6SS1dZACvJKzkMYzmKyN7i4htTq9f5xWioUHEbO0SZlEdZjWR4pNwCsB2kwcNIWO6-nSyxvVwID0M2KSK0-e8VxgnNzJ03uPaTF9t2H9b4Mo5Vg8RDD0AYNgzt388_R7DJzDPVQQ00czODt1Rq9JYavx5p9PphUPy0pRdA2e7nuunSgUomax9h54CFMlDhBnD");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1b0e0e] text-base font-medium leading-normal">Urban Living</p>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">A modern apartment complex with sustainable features.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Approach</h2>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#1b0e0e] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Our Core Values
+                </h1>
+                <p class="text-[#1b0e0e] text-base font-normal leading-normal max-w-[720px]">
+                  At Studio Red, we believe in a holistic approach to architecture, integrating creativity, sustainability, and client collaboration to deliver exceptional results.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-4 flex-col">
+                  <div class="text-[#1b0e0e]" data-icon="Pencil" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM51.31,160,136,75.31,152.69,92,68,176.68ZM48,179.31,76.69,208H48Zm48,25.38L79.31,188,164,103.31,180.69,120Zm96-96L147.31,64l24-24L216,84.68Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">Design Excellence</h2>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                      We strive for design excellence in every project, blending aesthetics with functionality to create spaces that inspire.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-4 flex-col">
+                  <div class="text-[#1b0e0e]" data-icon="Plant" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.63,39.89a8,8,0,0,0-7.52-7.52c-51.76-3-93.32,12.74-111.18,42.22-11.8,19.49-11.78,43.16-.16,65.74a71.34,71.34,0,0,0-14.17,27L98.33,151c7.82-16.33,7.52-33.35-1-47.49-13.2-21.79-43.67-33.47-81.5-31.25a8,8,0,0,0-7.52,7.52c-2.23,37.83,9.46,68.3,31.25,81.5A45.82,45.82,0,0,0,63.44,168,54.58,54.58,0,0,0,87,162.33l25,25V216a8,8,0,0,0,16,0V186.51a55.61,55.61,0,0,1,12.27-35,73.91,73.91,0,0,0,33.31,8.4,60.9,60.9,0,0,0,31.83-8.86C234.89,133.21,250.67,91.65,247.63,39.89ZM47.81,147.6C32.47,138.31,23.79,116.32,24,88c28.32-.24,50.31,8.47,59.6,23.81,4.85,8,5.64,17.33,2.46,26.94L61.65,114.34a8,8,0,0,0-11.31,11.31l24.41,24.41C65.14,153.24,55.82,152.45,47.81,147.6Zm149.31-10.22c-13.4,8.11-29.15,8.73-45.15,2l53.69-53.7a8,8,0,0,0-11.31-11.31L140.65,128c-6.76-16-6.15-31.76,2-45.15,13.94-23,47-35.82,89.33-34.83C232.94,90.34,220.14,123.44,197.12,137.38Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">Sustainability</h2>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                      We are committed to sustainable design practices, minimizing environmental impact and promoting energy efficiency.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-4 flex-col">
+                  <div class="text-[#1b0e0e]" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">Client Collaboration</h2>
+                    <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                      We work closely with our clients throughout the design process, ensuring their vision is realized and their needs are met.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#994d4d] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#994d4d] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#994d4d] text-base font-normal leading-normal">@2024 Studio Red. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
